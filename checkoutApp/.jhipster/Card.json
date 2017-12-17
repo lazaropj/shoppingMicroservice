@@ -1,0 +1,26 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "number",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "experationDate",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "changelogDate": "20171217135029",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "card",
+    "jpaMetamodelFiltering": false,
+    "pagination": "pager",
+    "microserviceName": "checkoutApp",
+    "searchEngine": false
+}

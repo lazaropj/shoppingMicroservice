@@ -1,0 +1,28 @@
+{
+    "clientApp": {
+        "card" : {
+            "titlePay" : "Pagar Compra",
+            "home": {
+                "title": "Cartões",
+                "createLabel": "Criar novo Cartão",
+                "createOrEditLabel": "Criar ou editar Cartão"
+            },
+            "delete": {
+                "question": "Tem certeza de que deseja excluir Cartão {{ id }}?"
+            },
+            "detail": {
+                "title": "Cartão"
+            },
+            "name": "Nome",
+            "number": "Número",
+            "experationDate": "Dt Expiração"
+        }
+    },
+    "checkoutApp": {
+        "card" : {
+            "created": "Um novo Cartão foi criado com o identificador {{ param }}",
+            "updated": "Um Card foi atualizado com o identificador {{ param }}",
+            "deleted": "Um Card foi deletado com o identificador {{ param }}"
+        }
+    }
+}

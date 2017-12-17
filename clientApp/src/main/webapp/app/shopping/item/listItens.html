@@ -1,0 +1,64 @@
+<div>
+    <h2 data-translate="clientApp.shopping.home.title">Products</h2>
+    <jhi-alert></jhi-alert>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+            <tr jh-sort="vm.predicate" ascending="vm.reverse" callback="vm.transition()">
+                <th ><span data-translate="clientApp.shopping.name">Name</span></th>
+                <th ><span data-translate="clientApp.shopping.description">Description</span> </th>
+                <th ><span data-translate="clientApp.shopping.price">Price</span> </th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="product in vm.products track by product.id">
+                <td>{{product.name}}</td>
+                <td>{{product.description}}</td>
+                <td>{{product.price | currency}}</td>
+                <td class="text-right">
+                    <div class="btn-group flex-btn-group-container">
+                        <button class="btn btn-primary btn-sm" ng-click="vm.addProduct(product)">
+                            <span class="glyphicon glyphicon-pencil"></span>
+                            <span class="hidden-sm-down" data-translate="clientApp.shopping.add"></span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div ng-show="vm.cart.products.length > 0">
+        <h2 data-translate="clientApp.shopping.home.cart">Cart</h2>
+        <jhi-alert></jhi-alert>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th ><span data-translate="clientApp.shopping.name">Name</span> </th>
+                    <th ><span data-translate="clientApp.shopping.description">Description</span> </th>
+                    <th ><span data-translate="clientApp.shopping.price">Price</span> </th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="product in vm.cart.products track by $index">
+                    <td>{{product.name}}</td>
+                    <td>{{product.description}}</td>
+                    <td>{{product.price | currency}}</td>
+                </tr>
+                </tbody>
+            </table>
+            <div>
+                Total : {{ vm.cart.total | currency}}
+            </div>
+            <div>
+                <button class="btn btn-info btn-sm">
+                    <span class="glyphicon glyphicon-hand-right"></span>
+                    <span class="hidden-sm-down" data-translate="clientApp.shopping.checkout" ng-click="vm.checkout()"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

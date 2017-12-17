@@ -1,0 +1,33 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "many-to-many",
+            "relationshipName": "cart",
+            "otherEntityName": "cart",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "product"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "price",
+            "fieldType": "BigDecimal"
+        }
+    ],
+    "changelogDate": "20171216130352",
+    "entityTableName": "product",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "microserviceName": "productApp"
+}

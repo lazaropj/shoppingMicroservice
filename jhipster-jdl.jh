@@ -1,0 +1,16 @@
+entity Product {
+	name String,
+    description String,
+    price BigDecimal
+}
+
+entity Cart{
+	total BigDecimal
+}
+
+relationship ManyToMany {
+  Cart{product} to Product{cart}
+}
+
+// Set pagination options
+paginate Cart, Product with pagination

@@ -1,0 +1,24 @@
+{
+    "clientApp": {
+        "shopping" : {
+            "home": {
+                "title": "Produtos",
+                "cart": "Carrinho de compra"
+            },
+            "add" : "Adicinar no carrinho",
+            "checkout" : "Finalizar Compra",
+            "name": "Nome",
+            "description": "Descrição",
+            "price": "Preço",
+            "cart": "Carrinho",
+            "pay": "Pagar"
+        }
+    },
+    "productApp": {
+        "product" : {
+            "created": "Um novo Product foi criado com o identificador {{ param }}",
+                "updated": "Um Product foi atualizado com o identificador {{ param }}",
+                "deleted": "Um Product foi deletado com o identificador {{ param }}"
+        }
+    }
+}

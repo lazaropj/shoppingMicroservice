@@ -1,0 +1,28 @@
+{
+    "clientApp": {
+        "product" : {
+            "home": {
+                "title": "Products",
+                "createLabel": "Criar novo Product",
+                "createOrEditLabel": "Criar ou editar Product"
+            },
+            "delete": {
+                "question": "Tem certeza de que deseja excluir Product {{ id }}?"
+            },
+            "detail": {
+                "title": "Product"
+            },
+            "name": "Name",
+            "description": "Description",
+            "price": "Price",
+            "cart": "Cart"
+        }
+    },
+    "productApp": {
+        "product" : {
+            "created": "Um novo Product foi criado com o identificador {{ param }}",
+            "updated": "Um Product foi atualizado com o identificador {{ param }}",
+            "deleted": "Um Product foi deletado com o identificador {{ param }}"
+        }
+    }
+}

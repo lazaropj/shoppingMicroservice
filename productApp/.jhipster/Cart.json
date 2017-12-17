@@ -1,0 +1,26 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityRelationshipName": "cart",
+            "relationshipName": "product",
+            "otherEntityName": "product",
+            "otherEntityField": "id",
+            "ownerSide": true
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "total",
+            "fieldType": "BigDecimal"
+        }
+    ],
+    "changelogDate": "20171216130353",
+    "entityTableName": "cart",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "microserviceName": "productApp"
+}

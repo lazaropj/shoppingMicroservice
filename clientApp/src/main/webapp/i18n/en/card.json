@@ -1,0 +1,27 @@
+{
+    "clientApp": {
+        "card" : {
+            "home": {
+                "title": "Cards",
+                "createLabel": "Create a new Card",
+                "createOrEditLabel": "Create or edit a Card"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Card {{ id }}?"
+            },
+            "detail": {
+                "title": "Card"
+            },
+            "name": "Name",
+            "number": "Number",
+            "experationDate": "Experation Date"
+        }
+    },
+    "checkoutApp": {
+        "card" : {
+            "created": "A new Card is created with identifier {{ param }}",
+            "updated": "A Card is updated with identifier {{ param }}",
+            "deleted": "A Card is deleted with identifier {{ param }}"
+        }
+    }
+}

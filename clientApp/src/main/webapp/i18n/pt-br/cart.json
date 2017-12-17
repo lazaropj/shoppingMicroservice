@@ -1,0 +1,26 @@
+{
+    "clientApp": {
+        "cart" : {
+            "home": {
+                "title": "Carts",
+                "createLabel": "Criar novo Cart",
+                "createOrEditLabel": "Criar ou editar Cart"
+            },
+            "delete": {
+                "question": "Tem certeza de que deseja excluir Cart {{ id }}?"
+            },
+            "detail": {
+                "title": "Cart"
+            },
+            "total": "Total",
+            "product": "Product"
+        }
+    },
+    "productApp": {
+        "cart" : {
+            "created": "Um novo Cart foi criado com o identificador {{ param }}",
+            "updated": "Um Cart foi atualizado com o identificador {{ param }}",
+            "deleted": "Um Cart foi deletado com o identificador {{ param }}"
+        }
+    }
+}
